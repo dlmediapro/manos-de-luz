@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <style>
+      .fav-bg { fill: #F7F4EE; }
+      .fav-mano { fill: #8C9A7E; stroke: #4A3525; stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; }
+      .fav-corazon { fill: #C86D63; stroke: #4A3525; stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; }
+      .fav-puntada { stroke: #F7F4EE; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+    </style>
+  </defs>
+  <circle cx="64" cy="64" r="62" class="fav-bg" stroke="#C86D63" stroke-width="2.5" />
+  <g transform="translate(10, 6) scale(0.21)">
+    <!-- Manos -->
+    <path class="fav-mano" d="
+      M 244 395 C 195 395, 142 368, 114 326 C 90 290, 88 244, 106 202
+      C 112 188, 128 185, 136 198 C 146 213, 150 231, 160 248
+      C 166 230, 172 206, 185 192 C 194 182, 206 187, 208 200
+      C 212 220, 214 243, 218 264 C 222 248, 228 230, 238 220
+      C 246 212, 252 218, 250 227 C 245 252, 238 290, 226 322
+      C 218 345, 226 374, 244 395 Z
+    " />
+    <path class="fav-mano" d="
+      M 268 395 C 317 395, 370 368, 398 326 C 422 290, 424 244, 406 202
+      C 400 188, 384 185, 376 198 C 366 213, 362 231, 352 248
+      C 346 230, 340 206, 327 192 C 318 182, 306 187, 304 200
+      C 300 220, 298 243, 294 264 C 290 248, 284 230, 274 220
+      C 266 212, 260 218, 262 227 C 267 252, 274 290, 286 322
+      C 294 345, 286 374, 268 395 Z
+    " />
+    <!-- Corazón Tejido -->
+    <path class="fav-corazon" d="
+      M 256 138 C 246 122, 228 106, 202 106 C 168 106, 144 133, 144 167
+      C 144 208, 186 246, 256 288 C 326 246, 368 208, 368 167
+      C 368 133, 344 106, 310 106 C 284 106, 266 122, 256 138 Z
+    " />
+    <!-- Puntadas V -->
+    <path class="fav-puntada" d="M 210 130 L 215 139 L 220 130" />
+    <path class="fav-puntada" d="M 292 130 L 297 139 L 302 130" />
+    <path class="fav-puntada" d="M 222 156 L 228 166 L 234 156" />
+    <path class="fav-puntada" d="M 246 156 L 252 166 L 258 156" />
+    <path class="fav-puntada" d="M 270 156 L 276 166 L 282 156" />
+    <path class="fav-puntada" d="M 234 182 L 240 192 L 246 182" />
+    <path class="fav-puntada" d="M 258 182 L 264 192 L 270 182" />
+    <path class="fav-puntada" d="M 246 215 L 252 225 L 258 215" />
+  </g>
+</svg>

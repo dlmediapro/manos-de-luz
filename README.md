@@ -9,13 +9,15 @@
 
 ## 🌟 Resumen de Entregables Vectoriales
 
-Este repositorio contiene los archivos fuente en código vectorial nativo SVG para la identidad de marca de **Manos de Luz**, diseñados bajo el concepto central de *«Un corazón tejido amigurumi protegido entre dos manos abiertas en ofrenda»*.
+Este repositorio contiene los archivos fuente en código vectorial nativo SVG para la identidad de marca de **Manos de Luz**, diseñados con **Lora Serif Itálica SemiBold (600)** bajo el concepto central de *«Un corazón tejido amigurumi protegido entre dos manos abiertas en ofrenda»*.
 
 | Archivo | Formato | Caso de Uso Principal |
 | :--- | :---: | :--- |
 | [`vectores/isologo-principal.svg`](vectores/isologo-principal.svg) | SVG Nativo | Cabeceras web, banners, catálogos, folletería y empaques frontales. |
+| [`vectores/isologo-horizontal.svg`](vectores/isologo-horizontal.svg) | SVG Nativo | Barras de navegación (navbars), firmas de correo, facturas y membretes. |
 | [`vectores/isologo-monocromatico.svg`](vectores/isologo-monocromatico.svg) | SVG Nativo | Sellos de goma, bolsas de papel kraft, bordados textiles y grabado en madera. |
 | [`vectores/isotipo-aislado.svg`](vectores/isotipo-aislado.svg) | SVG Nativo | Avatar de Instagram (@tejidos.manosdeluz), favicons, stickers circulares y etiquetas. |
+| [`vectores/favicon.svg`](vectores/favicon.svg) | SVG Nativo | Icono oficial para pestañas de navegador web y aplicaciones móviles. |
 
 ---
 
@@ -29,9 +31,23 @@ Este repositorio contiene los archivos fuente en código vectorial nativo SVG pa
 
 ---
 
+## 📂 Organización de la Carpeta en Google Drive
+
+```text
+03_MANOS DE LUZ/
+├── 01_Insumos_y_Manuales/          # Documentos originales del cliente, PDFs y paleta ASE
+├── 02_Tipografias/                 # Familias tipográficas Lora y Nunito (TTF)
+├── vectores/                       # Código vectorial SVG para imprenta e Illustrator
+├── index.html                      # Portal interactivo web desplegado en GitHub Pages
+├── DESIGN.md                       # Manual de Marca SSOT
+└── README.md                       # Resumen ejecutivo y enlaces de entrega
+```
+
+---
+
 ## 📖 Manual de Marca
 
-Para consultar las proporciones espaciales, retícula modular, reglas tipográficas (Lora + Nunito), áreas de seguridad y pautas de aplicación en redes sociales, visita el documento completo:  
+Para consultar las proporciones espaciales, retícula modular, reglas tipográficas (Lora Itálica + Nunito), áreas de seguridad y pautas de aplicación en redes sociales, visita el documento completo:  
 👉 [**Manual de Identidad Visual (DESIGN.md)**](DESIGN.md)
 
 ---
