@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      .bg-base { fill: #F7F4EE; }
+      .bg-avena { fill: #E8DDD0; }
+      .trazo-mano { fill: #8C9A7E; stroke: #4A3525; stroke-width: 3.5; stroke-linejoin: round; stroke-linecap: round; }
+      .mano-sombra { fill: #7A886D; opacity: 0.25; }
+      .corazon-base { fill: #C86D63; stroke: #4A3525; stroke-width: 4; stroke-linejoin: round; stroke-linecap: round; }
+      .corazon-sombra { fill: #B3584F; }
+      .puntada-amigurumi { stroke: #F7F4EE; stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .puntada-detalle { stroke: #E8DDD0; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .hebra-hilo { stroke: #C86D63; stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .hebra-acento { stroke: #F7F4EE; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .detalle-cacao { stroke: #4A3525; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .destello-luz { fill: #F7F4EE; opacity: 0.9; }
+    </style>
+    <!-- Filtro sutil si se desea, o sombras vectoriales puras para compatibilidad total con Illustrator -->
+  </defs>
+
+  <!-- Lienzo de fondo cálido -->
+  <rect width="512" height="512" rx="40" class="bg-base" />
+  <circle cx="256" cy="256" r="216" class="bg-avena" opacity="0.35" />
+
+  <!-- CAPA: MANOS ABIERTAS -->
+  <g id="capa-manos">
+    <!-- Mano Izquierda (Abierta en gesto de acogida) -->
+    <!-- Muñeca y base de palma -->
+    <path class="trazo-mano" d="
+      M 244 438
+      C 195 438, 142 410, 114 365
+      C 90 325, 88 275, 106 230
+      C 112 215, 128 212, 136 226
+      C 146 242, 150 262, 160 280
+      C 166 260, 172 235, 185 220
+      C 194 210, 206 215, 208 228
+      C 212 250, 214 275, 218 298
+      C 222 280, 228 260, 238 250
+      C 246 242, 252 248, 250 258
+      C 245 285, 238 325, 226 360
+      C 218 385, 226 415, 244 438
+      Z
+    " />
+    
+    <!-- Líneas de expresión y dedos mano izquierda -->
+    <path class="detalle-cacao" d="M 134 232 C 144 256, 150 285, 154 315" />
+    <path class="detalle-cacao" d="M 184 228 C 190 255, 194 285, 196 325" />
+    <path class="detalle-cacao" d="M 152 355 C 172 385, 202 410, 236 426" opacity="0.6" />
+
+    <!-- Mano Derecha (Simétrica a X=256) -->
+    <path class="trazo-mano" d="
+      M 268 438
+      C 317 438, 370 410, 398 365
+      C 422 325, 424 275, 406 230
+      C 400 215, 384 212, 376 226
+      C 366 242, 362 262, 352 280
+      C 346 260, 340 235, 327 220
+      C 318 210, 306 215, 304 228
+      C 300 250, 298 275, 294 298
+      C 290 280, 284 260, 274 250
+      C 266 242, 260 248, 262 258
+      C 267 285, 274 325, 286 360
+      C 294 385, 286 415, 268 438
+      Z
+    " />
+
+    <!-- Líneas de expresión y dedos mano derecha -->
+    <path class="detalle-cacao" d="M 378 232 C 368 256, 362 285, 358 315" />
+    <path class="detalle-cacao" d="M 328 228 C 322 255, 318 285, 316 325" />
+    <path class="detalle-cacao" d="M 360 355 C 340 385, 310 410, 276 426" opacity="0.6" />
+
+    <!-- Centro de encuentro de las muñecas / Base acogedora -->
+    <path class="detalle-cacao" d="M 238 438 C 250 446, 262 446, 274 438" />
+  </g>
+
+  <!-- CAPA: CORAZÓN TEJIDO (AMIGURUMI) -->
+  <g id="capa-corazon-tejido">
+    <!-- Silueta principal del Corazón -->
+    <path class="corazon-base" d="
+      M 256 160
+      C 246 142, 228 124, 202 124
+      C 168 124, 144 154, 144 192
+      C 144 238, 186 280, 256 326
+      C 326 280, 368 238, 368 192
+      C 368 154, 344 124, 310 124
+      C 284 124, 266 142, 256 160
+      Z
+    " />
+
+    <!-- Sombra volumétrica interna del corazón para dar sensación amigurumi 3D -->
+    <path class="corazon-sombra" d="
+      M 256 160
+      C 266 142, 284 124, 310 124
+      C 344 124, 368 154, 368 192
+      C 368 238, 326 280, 256 326
+      C 268 286, 282 246, 282 208
+      C 282 176, 270 166, 256 160
+      Z
+    " opacity="0.3" />
+
+    <!-- Trama de Puntadas de Crochet (Punto Bajo Amigurumi en "V") -->
+    <!-- Fila 1 (Lóbulos superiores) -->
+    <path class="puntada-amigurumi" d="M 188 152 L 194 162 L 200 152" />
+    <path class="puntada-amigurumi" d="M 208 150 L 214 160 L 220 150" />
+    <path class="puntada-amigurumi" d="M 292 150 L 298 160 L 304 150" />
+    <path class="puntada-amigurumi" d="M 312 152 L 318 162 L 324 152" />
+
+    <!-- Fila 2 (Cuerpo superior) -->
+    <path class="puntada-amigurumi" d="M 172 178 L 178 190 L 184 178" />
+    <path class="puntada-amigurumi" d="M 196 178 L 202 190 L 208 178" />
+    <path class="puntada-amigurumi" d="M 220 178 L 226 190 L 232 178" />
+    <path class="puntada-amigurumi" d="M 244 178 L 250 190 L 256 178" />
+    <path class="puntada-amigurumi" d="M 268 178 L 274 190 L 280 178" />
+    <path class="puntada-amigurumi" d="M 292 178 L 298 190 L 304 178" />
+    <path class="puntada-amigurumi" d="M 316 178 L 322 190 L 328 178" />
+    <path class="puntada-amigurumi" d="M 338 180 L 344 192 L 350 180" />
+
+    <!-- Fila 3 (Centro) -->
+    <path class="puntada-amigurumi" d="M 182 208 L 188 220 L 194 208" />
+    <path class="puntada-amigurumi" d="M 206 208 L 212 220 L 218 208" />
+    <path class="puntada-amigurumi" d="M 230 208 L 236 220 L 242 208" />
+    <path class="puntada-amigurumi" d="M 254 208 L 260 220 L 266 208" />
+    <path class="puntada-amigurumi" d="M 278 208 L 284 220 L 290 208" />
+    <path class="puntada-amigurumi" d="M 302 208 L 308 220 L 314 208" />
+    <path class="puntada-amigurumi" d="M 326 208 L 332 220 L 338 208" />
+
+    <!-- Fila 4 (Cuerpo medio-bajo) -->
+    <path class="puntada-amigurumi" d="M 200 238 L 206 250 L 212 238" />
+    <path class="puntada-amigurumi" d="M 224 238 L 230 250 L 236 238" />
+    <path class="puntada-amigurumi" d="M 248 238 L 254 250 L 260 238" />
+    <path class="puntada-amigurumi" d="M 272 238 L 278 250 L 284 238" />
+    <path class="puntada-amigurumi" d="M 296 238 L 302 250 L 308 238" />
+
+    <!-- Fila 5 (Hacia la punta) -->
+    <path class="puntada-amigurumi" d="M 220 268 L 226 280 L 232 268" />
+    <path class="puntada-amigurumi" d="M 244 268 L 250 280 L 256 268" />
+    <path class="puntada-amigurumi" d="M 268 268 L 274 280 L 280 268" />
+
+    <!-- Fila 6 (Punta final) -->
+    <path class="puntada-amigurumi" d="M 244 294 L 250 304 L 256 294" />
+
+    <!-- Hebra de hilo artesanal que nace del corazón y abraza la composición -->
+    <path class="hebra-hilo" d="
+      M 256 326
+      C 240 345, 230 365, 245 385
+      C 260 405, 290 400, 295 380
+      C 300 360, 275 350, 265 365
+      C 255 380, 260 405, 280 415
+      C 295 422, 315 418, 325 405
+    " />
+
+    <!-- Destellos de luz / Brillo artesanal -->
+    <circle cx="178" cy="156" r="4.5" class="destello-luz" />
+    <circle cx="190" cy="144" r="2.5" class="destello-luz" />
+    <circle cx="334" cy="156" r="3.5" class="destello-luz" />
+  </g>
+</svg>

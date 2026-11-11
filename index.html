@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manos de Luz — Identidad Visual y Sistema Vectorial</title>
+  
+  <!-- Tipografías Oficiales Google Fonts: Lora + Nunito -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --color-crema: #F7F4EE;      /* 60% Base */
+      --color-avena: #E8DDD0;      /* 25% Soporte */
+      --color-cacao: #4A3525;      /* 25% Soporte / Texto */
+      --color-oliva: #8C9A7E;      /* 10% Equilibrio */
+      --color-terracota: #C86D63;  /* 5% Acción / Acento */
+      
+      --font-serif: 'Lora', Georgia, serif;
+      --font-sans: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
+      
+      --radius-sm: 8px;
+      --radius-md: 18px;
+      --radius-lg: 32px;
+      --shadow-soft: 0 10px 30px rgba(74, 53, 37, 0.08);
+      --shadow-hover: 0 14px 36px rgba(74, 53, 37, 0.14);
+      --transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--color-crema);
+      color: var(--color-cacao);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* ESTILOS DE FONDOS INTERACTIVOS */
+    body.bg-modo-crema {
+      background-color: var(--color-crema);
+      color: var(--color-cacao);
+    }
+    body.bg-modo-avena {
+      background-color: var(--color-avena);
+      color: var(--color-cacao);
+    }
+    body.bg-modo-cacao {
+      background-color: var(--color-cacao);
+      color: var(--color-crema);
+    }
+
+    /* HEADER Y NAVEGACIÓN SUPERIOR */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(247, 244, 238, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(74, 53, 37, 0.1);
+      padding: 14px 28px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    body.bg-modo-cacao .site-header {
+      background: rgba(74, 53, 37, 0.92);
+      border-bottom: 1px solid rgba(247, 244, 238, 0.15);
+    }
+
+    .brand-logo-nav {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .brand-logo-nav img {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+    }
+
+    .brand-name {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+
+    .theme-controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .theme-btn {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .theme-btn:hover, .theme-btn.active {
+      transform: scale(1.2);
+      border-color: var(--color-cacao);
+    }
+    body.bg-modo-cacao .theme-btn.active {
+      border-color: var(--color-crema);
+    }
+
+    .btn-t-crema { background-color: var(--color-crema); border: 1px solid #D5C8B8; }
+    .btn-t-avena { background-color: var(--color-avena); }
+    .btn-t-cacao { background-color: var(--color-cacao); }
+
+    /* CONTENEDOR CENTRAL */
+    .main-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    /* SECCIÓN HÉROE */
+    .hero-banner {
+      text-align: center;
+      padding: 60px 20px 40px;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      background: rgba(140, 154, 126, 0.18);
+      color: var(--color-oliva);
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 3px;
+      padding: 6px 16px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    body.bg-modo-cacao .hero-tag {
+      background: rgba(140, 154, 126, 0.3);
+      color: #A9BCA3;
+    }
+
+    .hero-title {
+      font-family: var(--font-serif);
+      font-size: 2.8rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .hero-slogan {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-style: italic;
+      color: var(--color-terracota);
+      margin-bottom: 24px;
+    }
+
+    .hero-desc {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      opacity: 0.9;
+      margin-bottom: 32px;
+    }
+
+    /* GRILLA DE ENTREGABLES VECTORIALES */
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      font-weight: 700;
+      text-align: center;
+      margin: 50px 0 30px;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    .vector-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(74, 53, 37, 0.12);
+      box-shadow: var(--shadow-soft);
+      padding: 30px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: var(--transition);
+      color: var(--color-cacao);
+    }
+
+    .vector-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .card-preview-box {
+      width: 100%;
+      height: 280px;
+      background: var(--color-crema);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 1px dashed rgba(74, 53, 37, 0.15);
+      position: relative;
+    }
+
+    .card-preview-box img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .card-title {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .card-text {
+      font-size: 0.9rem;
+      opacity: 0.85;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .btn-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: var(--color-cacao);
+      color: var(--color-crema);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.88rem;
+      padding: 12px 22px;
+      border-radius: 30px;
+      transition: var(--transition);
+    }
+
+    .btn-download:hover {
+      background-color: var(--color-terracota);
+      transform: scale(1.03);
+    }
+
+    /* PALETA CROMÁTICA OFICIAL */
+    .palette-box {
+      background: #FFFFFF;
+      border-radius: var(--radius-md);
+      padding: 36px 30px;
+      border: 1px solid rgba(74, 53, 37, 0.12);
+      box-shadow: var(--shadow-soft);
+      color: var(--color-cacao);
+      margin-bottom: 50px;
+    }
+
+    .palette-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .color-chip {
+      border-radius: var(--radius-sm);
+      padding: 20px;
+      text-align: center;
+      font-weight: 700;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .color-chip .c-name { font-size: 0.9rem; margin-bottom: 4px; }
+    .color-chip .c-hex { font-size: 1rem; font-family: monospace; }
+    .color-chip .c-prop { font-size: 0.75rem; opacity: 0.8; margin-top: 4px; }
+
+    /* SECCIÓN TIPOGRAFÍAS */
+    .type-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      margin-bottom: 50px;
+    }
+
+    .type-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-md);
+      padding: 30px;
+      border: 1px solid rgba(74, 53, 37, 0.12);
+      box-shadow: var(--shadow-soft);
+      color: var(--color-cacao);
+    }
+
+    .type-sample-title {
+      font-size: 1.8rem;
+      margin: 12px 0 8px;
+    }
+
+    /* FOOTER DE ENTREGA */
+    .site-footer {
+      text-align: center;
+      padding: 40px 20px;
+      border-top: 1px solid rgba(74, 53, 37, 0.12);
+      font-size: 0.9rem;
+      opacity: 0.85;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 12px;
+    }
+
+    .footer-links a {
+      color: var(--color-terracota);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .hero-title { font-size: 2.1rem; }
+      .site-header { padding: 12px 18px; }
+    }
+  </style>
+</head>
+<body class="bg-modo-crema" id="body-tag">
+
+  <!-- ENCABEZADO Y CONTROLES -->
+  <header class="site-header">
+    <a href="#" class="brand-logo-nav">
+      <img src="vectores/isotipo-aislado.svg" alt="Icono Manos de Luz" />
+      <span class="brand-name">Manos de Luz</span>
+    </a>
+
+    <div class="theme-controls">
+      <span>Probar Fondo:</span>
+      <button class="theme-btn btn-t-crema active" title="Fondo Crema Algodón" onclick="setTheme('bg-modo-crema', this)"></button>
+      <button class="theme-btn btn-t-avena" title="Fondo Avena Tibia" onclick="setTheme('bg-modo-avena', this)"></button>
+      <button class="theme-btn btn-t-cacao" title="Fondo Cacao Profundo" onclick="setTheme('bg-modo-cacao', this)"></button>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="main-container">
+
+    <!-- HÉROE PRESENTACIÓN -->
+    <section class="hero-banner">
+      <span class="hero-tag">PRESENTACIÓN DE IDENTIDAD VISUAL</span>
+      <h1 class="hero-title">Tejidos Manos de Luz</h1>
+      <p class="hero-slogan">«Amor y sacrificio tejidos en cada punto.»</p>
+      <p class="hero-desc">
+        Diseño vectorial concebido para transmitir calidez maternal, paciencia artesanal y la ternura única del amigurumi tejido a mano desde el <strong>30 de septiembre de 1985</strong>.
+      </p>
+    </section>
+
+    <!-- ENTREGABLES VECTORIALES SVG -->
+    <h2 class="section-title">Variaciones Vectoriales Oficiales</h2>
+    <div class="cards-grid">
+      
+      <!-- VARIACIÓN 1: ISOLOGO PRINCIPAL A COLOR -->
+      <article class="vector-card">
+        <div class="card-preview-box">
+          <img src="vectores/isologo-principal.svg" alt="Isologo Principal a Color" />
+        </div>
+        <h3 class="card-title">Isologo Principal a Color</h3>
+        <p class="card-text">Composición vertical completa con el corazón amigurumi, manos acogedoras, logomarca Lora y descriptor Nunito.</p>
+        <a href="vectores/isologo-principal.svg" download class="btn-download">
+          <span>⬇ Descargar SVG</span>
+        </a>
+      </article>
+
+      <!-- VARIACIÓN 2: ISOLOGO MONOCROMÁTICO -->
+      <article class="vector-card">
+        <div class="card-preview-box" style="background: #EFE7DC;">
+          <img src="vectores/isologo-monocromatico.svg" alt="Isologo Monocromático" />
+        </div>
+        <h3 class="card-title">Versión Monocromática</h3>
+        <p class="card-text">Diseñado a una sola tinta (Cacao Profundo) con cortes de alivio en espacio negativo para sellos de goma, packaging kraft y bordados.</p>
+        <a href="vectores/isologo-monocromatico.svg" download class="btn-download">
+          <span>⬇ Descargar SVG</span>
+        </a>
+      </article>
+
+      <!-- VARIACIÓN 3: ISOTIPO AISLADO -->
+      <article class="vector-card">
+        <div class="card-preview-box">
+          <img src="vectores/isotipo-aislado.svg" style="max-width: 170px;" alt="Isotipo Aislado" />
+        </div>
+        <h3 class="card-title">Isotipo Aislado</h3>
+        <p class="card-text">Símbolo puro del corazón tejido protegido entre dos manos abiertas. Optimizado para favicon, stickers y avatar de Instagram.</p>
+        <a href="vectores/isotipo-aislado.svg" download class="btn-download">
+          <span>⬇ Descargar SVG</span>
+        </a>
+      </article>
+
+    </div>
+
+    <!-- PALETA DE COLOR CROMÁTICA -->
+    <section class="palette-box">
+      <h2 style="font-family: var(--font-serif); font-size: 1.6rem; text-align: center;">Paleta Oficial: "Abrazo Artesanal"</h2>
+      <p style="text-align: center; font-size: 0.95rem; opacity: 0.85; margin-top: 6px;">Proporción áurea de aplicación: Regla 60 - 25 - 10 - 5</p>
+
+      <div class="palette-grid">
+        <div class="color-chip" style="background: #F7F4EE; color: #4A3525;">
+          <div class="c-name">Crema Algodón</div>
+          <div class="c-hex">#F7F4EE</div>
+          <div class="c-prop">60% — Lienzo Base</div>
+        </div>
+
+        <div class="color-chip" style="background: #E8DDD0; color: #4A3525;">
+          <div class="c-name">Avena Tibia</div>
+          <div class="c-hex">#E8DDD0</div>
+          <div class="c-prop">25% — Soporte Tarjetas</div>
+        </div>
+
+        <div class="color-chip" style="background: #4A3525; color: #F7F4EE;">
+          <div class="c-name">Cacao Profundo</div>
+          <div class="c-hex">#4A3525</div>
+          <div class="c-prop">25% — Textos y Contorno</div>
+        </div>
+
+        <div class="color-chip" style="background: #8C9A7E; color: #F7F4EE;">
+          <div class="c-name">Verde Oliva</div>
+          <div class="c-hex">#8C9A7E</div>
+          <div class="c-prop">10% — Equilibrio / Manos</div>
+        </div>
+
+        <div class="color-chip" style="background: #C86D63; color: #F7F4EE;">
+          <div class="c-name">Terracota Rosado</div>
+          <div class="c-hex">#C86D63</div>
+          <div class="c-prop">5% — Acento / Corazón</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SISTEMA TIPOGRÁFICO -->
+    <section class="type-box">
+      <div class="type-card">
+        <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-terracota); letter-spacing: 2px;">TIPOGRAFÍA PRINCIPAL</span>
+        <h3 class="type-sample-title" style="font-family: var(--font-serif); font-weight: 700;">Lora Serif</h3>
+        <p style="font-size: 0.9rem; opacity: 0.85; margin-bottom: 16px;">Aporta alma artesanal, tradición y prestigio editorial a los nombres de colecciones y logomarca.</p>
+        <p style="font-family: var(--font-serif); font-style: italic; color: var(--color-terracota); font-size: 1.1rem;">
+          «Amor y sacrificio tejidos en cada punto»
+        </p>
+      </div>
+
+      <div class="type-card">
+        <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-oliva); letter-spacing: 2px;">TIPOGRAFÍA SECUNDARIA</span>
+        <h3 class="type-sample-title" style="font-family: var(--font-sans); font-weight: 700;">Nunito Sans</h3>
+        <p style="font-size: 0.9rem; opacity: 0.85; margin-bottom: 16px;">Curvas amables, redondeadas y cálidas para lectura cómoda de historias, descripciones y botones.</p>
+        <p style="font-family: var(--font-sans); font-weight: 600; letter-spacing: 4px; font-size: 0.9rem; color: var(--color-oliva);">
+          TEJIDOS ARTESANALES
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="site-footer">
+    <p><strong>Manos de Luz</strong> — Taller Artesanal de Muñecas Amigurumis (Fundado el 30 de Septiembre de 1985)</p>
+    <div class="footer-links">
+      <a href="DESIGN.md" target="_blank">Ver Manual de Marca Completo (DESIGN.md)</a>
+      <a href="https://instagram.com/tejidos.manosdeluz" target="_blank">Instagram: @tejidos.manosdeluz</a>
+      <a href="https://wa.me/51936372861" target="_blank">WhatsApp Directo</a>
+    </div>
+  </footer>
+
+  <script>
+    function setTheme(themeClass, btn) {
+      document.body.className = themeClass;
+      document.querySelectorAll('.theme-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+  </script>
+</body>
+</html>

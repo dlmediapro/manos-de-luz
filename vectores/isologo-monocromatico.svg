@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 660" width="600" height="660" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,400&amp;family=Nunito:wght@400;600;700;800&amp;display=swap');
+      
+      /* Modo Monocromático Tinta Cacao Profundo (#4A3525) */
+      .mono-bg { fill: #F7F4EE; }
+      .mono-tinta { fill: #4A3525; }
+      .mono-trazo { stroke: #4A3525; stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .mono-alivio { stroke: #F7F4EE; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .mono-puntada { stroke: #F7F4EE; stroke-width: 3.2; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      
+      /* Tipografía Monocromática */
+      .texto-marca-mono { font-family: 'Lora', Georgia, serif; font-size: 46px; font-weight: 700; fill: #4A3525; text-anchor: middle; }
+      .texto-descriptor-mono { font-family: 'Nunito', -apple-system, sans-serif; font-size: 15px; font-weight: 700; fill: #4A3525; letter-spacing: 6px; text-anchor: middle; }
+      .texto-slogan-mono { font-family: 'Lora', Georgia, serif; font-size: 14px; font-style: italic; fill: #4A3525; text-anchor: middle; }
+      .mono-linea-adorno { stroke: #4A3525; stroke-width: 1.8; stroke-linecap: round; opacity: 0.6; }
+    </style>
+  </defs>
+
+  <!-- Lienzo Monocromático Base -->
+  <rect width="600" height="660" rx="36" class="mono-bg" />
+
+  <!-- GRUPO SIMBÓLICO MONOCROMÁTICO -->
+  <g id="capa-isotipo-mono" transform="translate(44, 5)">
+    <!-- CAPA 1: MANOS ABIERTAS (Tinta única con silueta estilizada) -->
+    <g id="capa-manos">
+      <!-- Mano Izquierda -->
+      <path class="mono-tinta" d="
+        M 244 395
+        C 195 395, 142 368, 114 326
+        C 90 290, 88 244, 106 202
+        C 112 188, 128 185, 136 198
+        C 146 213, 150 231, 160 248
+        C 166 230, 172 206, 185 192
+        C 194 182, 206 187, 208 200
+        C 212 220, 214 243, 218 264
+        C 222 248, 228 230, 238 220
+        C 246 212, 252 218, 250 227
+        C 245 252, 238 290, 226 322
+        C 218 345, 226 374, 244 395
+        Z
+      " />
+      <!-- Separaciones en espacio negativo interno mano izquierda -->
+      <path class="mono-alivio" d="M 134 204 C 144 226, 150 252, 154 280" />
+      <path class="mono-alivio" d="M 184 200 C 190 225, 194 252, 196 290" />
+      <path class="mono-alivio" d="M 152 320 C 172 348, 202 370, 236 384" />
+
+      <!-- Mano Derecha (Simétrica a X=256) -->
+      <path class="mono-tinta" d="
+        M 268 395
+        C 317 395, 370 368, 398 326
+        C 422 290, 424 244, 406 202
+        C 400 188, 384 185, 376 198
+        C 366 213, 362 231, 352 248
+        C 346 230, 340 206, 327 192
+        C 318 182, 306 187, 304 200
+        C 300 220, 298 243, 294 264
+        C 290 248, 284 230, 274 220
+        C 266 212, 260 218, 262 227
+        C 267 252, 274 290, 286 322
+        C 294 345, 286 374, 268 395
+        Z
+      " />
+      <!-- Separaciones en espacio negativo interno mano derecha -->
+      <path class="mono-alivio" d="M 378 204 C 368 226, 362 252, 358 280" />
+      <path class="mono-alivio" d="M 328 200 C 322 225, 318 252, 316 290" />
+      <path class="mono-alivio" d="M 360 320 C 340 348, 310 370, 276 384" />
+
+      <!-- Base de unión de manos con alivio -->
+      <path class="mono-alivio" d="M 238 395 C 250 402, 262 402, 274 395" />
+    </g>
+
+    <!-- CAPA 2: CORAZÓN TEJIDO (Con corte de alivio para máxima definición) -->
+    <g id="capa-corazon-tejido">
+      <!-- Filete de Reserva de Espacio Negativo (Alivio entre manos y corazón) -->
+      <path class="mono-alivio" stroke-width="8" d="
+        M 256 138
+        C 246 122, 228 106, 202 106
+        C 168 106, 144 133, 144 167
+        C 144 208, 186 246, 256 288
+        C 326 246, 368 208, 368 167
+        C 368 133, 344 106, 310 106
+        C 284 106, 266 122, 256 138
+        Z
+      " />
+
+      <!-- Silueta principal del Corazón en Tinta -->
+      <path class="mono-tinta" d="
+        M 256 138
+        C 246 122, 228 106, 202 106
+        C 168 106, 144 133, 144 167
+        C 144 208, 186 246, 256 288
+        C 326 246, 368 208, 368 167
+        C 368 133, 344 106, 310 106
+        C 284 106, 266 122, 256 138
+        Z
+      " />
+
+      <!-- Puntadas de Crochet Amigurumi en Espacio Negativo (Puntos en 'V') -->
+      <path class="mono-puntada" d="M 190 132 L 195 141 L 200 132" />
+      <path class="mono-puntada" d="M 210 130 L 215 139 L 220 130" />
+      <path class="mono-puntada" d="M 292 130 L 297 139 L 302 130" />
+      <path class="mono-puntada" d="M 312 132 L 317 141 L 322 132" />
+
+      <path class="mono-puntada" d="M 174 156 L 180 166 L 186 156" />
+      <path class="mono-puntada" d="M 198 156 L 204 166 L 210 156" />
+      <path class="mono-puntada" d="M 222 156 L 228 166 L 234 156" />
+      <path class="mono-puntada" d="M 246 156 L 252 166 L 258 156" />
+      <path class="mono-puntada" d="M 270 156 L 276 166 L 282 156" />
+      <path class="mono-puntada" d="M 294 156 L 300 166 L 306 156" />
+      <path class="mono-puntada" d="M 318 156 L 324 166 L 330 156" />
+
+      <path class="mono-puntada" d="M 186 182 L 192 192 L 198 182" />
+      <path class="mono-puntada" d="M 210 182 L 216 192 L 222 182" />
+      <path class="mono-puntada" d="M 234 182 L 240 192 L 246 182" />
+      <path class="mono-puntada" d="M 258 182 L 264 192 L 270 182" />
+      <path class="mono-puntada" d="M 282 182 L 288 192 L 294 182" />
+      <path class="mono-puntada" d="M 306 182 L 312 192 L 318 182" />
+
+      <path class="mono-puntada" d="M 202 208 L 208 218 L 214 208" />
+      <path class="mono-puntada" d="M 226 208 L 232 218 L 238 208" />
+      <path class="mono-puntada" d="M 250 208 L 256 218 L 262 208" />
+      <path class="mono-puntada" d="M 274 208 L 280 218 L 286 208" />
+      <path class="mono-puntada" d="M 298 208 L 304 218 L 310 208" />
+
+      <path class="mono-puntada" d="M 224 235 L 230 245 L 236 235" />
+      <path class="mono-puntada" d="M 248 235 L 254 245 L 260 235" />
+      <path class="mono-puntada" d="M 272 235 L 278 245 L 284 235" />
+
+      <path class="mono-puntada" d="M 246 260 L 252 268 L 258 260" />
+
+      <!-- Hebra de hilo monocromática -->
+      <path class="mono-trazo" stroke-width="4" d="
+        M 256 288
+        C 242 305, 234 322, 246 340
+        C 258 358, 285 354, 290 336
+        C 295 318, 272 310, 263 324
+        C 254 338, 258 360, 276 368
+      " />
+      
+      <!-- Destellos de luz en espacio negativo -->
+      <circle cx="178" cy="136" r="4" fill="#F7F4EE" />
+      <circle cx="188" cy="125" r="2" fill="#F7F4EE" />
+      <circle cx="334" cy="136" r="3" fill="#F7F4EE" />
+    </g>
+  </g>
+
+  <!-- CAPA 3: TEXTOS Y MARCA MONOCROMÁTICA -->
+  <g id="capa-textos">
+    <!-- Adornos lineales en tinta única -->
+    <line x1="120" y1="440" x2="210" y2="440" class="mono-linea-adorno" />
+    <circle cx="300" cy="440" r="4" class="mono-tinta" />
+    <line x1="390" y1="440" x2="480" y2="440" class="mono-linea-adorno" />
+
+    <!-- Nombre de la marca: Lora Bold en tinta Cacao -->
+    <text x="300" y="495" class="texto-marca-mono">Manos de Luz</text>
+
+    <!-- Descriptor artesanal: Nunito Bold en tinta Cacao -->
+    <text x="300" y="534" class="texto-descriptor-mono">TEJIDOS ARTESANALES</text>
+
+    <!-- Slogan emotivo: Lora Italic en tinta Cacao -->
+    <text x="300" y="572" class="texto-slogan-mono">«Amor y sacrificio tejidos en cada punto»</text>
+  </g>
+</svg>

@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 660" width="600" height="660" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,400&amp;family=Nunito:wght@400;600;700;800&amp;display=swap');
+      
+      .bg-canvas { fill: #F7F4EE; }
+      .bg-halo { fill: #E8DDD0; opacity: 0.4; }
+      
+      /* Capa Manos */
+      .mano-forma { fill: #8C9A7E; stroke: #4A3525; stroke-width: 3.5; stroke-linejoin: round; stroke-linecap: round; }
+      .mano-linea { stroke: #4A3525; stroke-width: 2.8; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      
+      /* Capa Corazón Tejido */
+      .corazon-forma { fill: #C86D63; stroke: #4A3525; stroke-width: 3.8; stroke-linejoin: round; stroke-linecap: round; }
+      .corazon-sombra { fill: #B3584F; opacity: 0.28; }
+      .puntada-v { stroke: #F7F4EE; stroke-width: 3.2; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .hebra-crochet { stroke: #C86D63; stroke-width: 3.2; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .brillo-luz { fill: #F7F4EE; }
+      
+      /* Capa Tipografía y Marca */
+      .texto-marca { font-family: 'Lora', Georgia, serif; font-size: 46px; font-weight: 700; fill: #4A3525; text-anchor: middle; }
+      .texto-descriptor { font-family: 'Nunito', -apple-system, sans-serif; font-size: 15px; font-weight: 700; fill: #8C9A7E; letter-spacing: 6px; text-anchor: middle; }
+      .texto-slogan { font-family: 'Lora', Georgia, serif; font-size: 14px; font-style: italic; fill: #C86D63; text-anchor: middle; }
+      .adorno-linea { stroke: #E8DDD0; stroke-width: 2; stroke-linecap: round; }
+    </style>
+  </defs>
+
+  <!-- Lienzo de respiración artesanal -->
+  <rect width="600" height="660" rx="36" class="bg-canvas" />
+  <circle cx="300" cy="225" r="175" class="bg-halo" />
+
+  <!-- GRUPO SIMBÓLICO ESCALADO (Centro 300, 225) -->
+  <g id="capa-isotipo" transform="translate(44, 5) scale(1)">
+    <!-- CAPA 1: MANOS ABIERTAS -->
+    <g id="capa-manos">
+      <!-- Mano Izquierda -->
+      <path class="mano-forma" d="
+        M 244 395
+        C 195 395, 142 368, 114 326
+        C 90 290, 88 244, 106 202
+        C 112 188, 128 185, 136 198
+        C 146 213, 150 231, 160 248
+        C 166 230, 172 206, 185 192
+        C 194 182, 206 187, 208 200
+        C 212 220, 214 243, 218 264
+        C 222 248, 228 230, 238 220
+        C 246 212, 252 218, 250 227
+        C 245 252, 238 290, 226 322
+        C 218 345, 226 374, 244 395
+        Z
+      " />
+      <path class="mano-linea" d="M 134 204 C 144 226, 150 252, 154 280" />
+      <path class="mano-linea" d="M 184 200 C 190 225, 194 252, 196 290" />
+      <path class="mano-linea" d="M 152 320 C 172 348, 202 370, 236 384" opacity="0.55" />
+
+      <!-- Mano Derecha (Simétrica a X=256) -->
+      <path class="mano-forma" d="
+        M 268 395
+        C 317 395, 370 368, 398 326
+        C 422 290, 424 244, 406 202
+        C 400 188, 384 185, 376 198
+        C 366 213, 362 231, 352 248
+        C 346 230, 340 206, 327 192
+        C 318 182, 306 187, 304 200
+        C 300 220, 298 243, 294 264
+        C 290 248, 284 230, 274 220
+        C 266 212, 260 218, 262 227
+        C 267 252, 274 290, 286 322
+        C 294 345, 286 374, 268 395
+        Z
+      " />
+      <path class="mano-linea" d="M 378 204 C 368 226, 362 252, 358 280" />
+      <path class="mano-linea" d="M 328 200 C 322 225, 318 252, 316 290" />
+      <path class="mano-linea" d="M 360 320 C 340 348, 310 370, 276 384" opacity="0.55" />
+
+      <!-- Base de unión de manos -->
+      <path class="mano-linea" d="M 238 395 C 250 402, 262 402, 274 395" />
+    </g>
+
+    <!-- CAPA 2: CORAZÓN TEJIDO AMIGURUMI -->
+    <g id="capa-corazon-tejido">
+      <!-- Silueta del Corazón -->
+      <path class="corazon-forma" d="
+        M 256 138
+        C 246 122, 228 106, 202 106
+        C 168 106, 144 133, 144 167
+        C 144 208, 186 246, 256 288
+        C 326 246, 368 208, 368 167
+        C 368 133, 344 106, 310 106
+        C 284 106, 266 122, 256 138
+        Z
+      " />
+
+      <!-- Sombra volumétrica interna -->
+      <path class="corazon-sombra" d="
+        M 256 138
+        C 266 122, 284 106, 310 106
+        C 344 106, 368 133, 368 167
+        C 368 208, 326 246, 256 288
+        C 268 252, 282 216, 282 182
+        C 282 153, 270 144, 256 138
+        Z
+      " />
+
+      <!-- Puntadas de Crochet Amigurumi (Punto en 'V') -->
+      <path class="puntada-v" d="M 190 132 L 195 141 L 200 132" />
+      <path class="puntada-v" d="M 210 130 L 215 139 L 220 130" />
+      <path class="puntada-v" d="M 292 130 L 297 139 L 302 130" />
+      <path class="puntada-v" d="M 312 132 L 317 141 L 322 132" />
+
+      <path class="puntada-v" d="M 174 156 L 180 166 L 186 156" />
+      <path class="puntada-v" d="M 198 156 L 204 166 L 210 156" />
+      <path class="puntada-v" d="M 222 156 L 228 166 L 234 156" />
+      <path class="puntada-v" d="M 246 156 L 252 166 L 258 156" />
+      <path class="puntada-v" d="M 270 156 L 276 166 L 282 156" />
+      <path class="puntada-v" d="M 294 156 L 300 166 L 306 156" />
+      <path class="puntada-v" d="M 318 156 L 324 166 L 330 156" />
+
+      <path class="puntada-v" d="M 186 182 L 192 192 L 198 182" />
+      <path class="puntada-v" d="M 210 182 L 216 192 L 222 182" />
+      <path class="puntada-v" d="M 234 182 L 240 192 L 246 182" />
+      <path class="puntada-v" d="M 258 182 L 264 192 L 270 182" />
+      <path class="puntada-v" d="M 282 182 L 288 192 L 294 182" />
+      <path class="puntada-v" d="M 306 182 L 312 192 L 318 182" />
+
+      <path class="puntada-v" d="M 202 208 L 208 218 L 214 208" />
+      <path class="puntada-v" d="M 226 208 L 232 218 L 238 208" />
+      <path class="puntada-v" d="M 250 208 L 256 218 L 262 208" />
+      <path class="puntada-v" d="M 274 208 L 280 218 L 286 208" />
+      <path class="puntada-v" d="M 298 208 L 304 218 L 310 208" />
+
+      <path class="puntada-v" d="M 224 235 L 230 245 L 236 235" />
+      <path class="puntada-v" d="M 248 235 L 254 245 L 260 235" />
+      <path class="puntada-v" d="M 272 235 L 278 245 L 284 235" />
+
+      <path class="puntada-v" d="M 246 260 L 252 268 L 258 260" />
+
+      <!-- Hebra de hilo amigurumi -->
+      <path class="hebra-crochet" d="
+        M 256 288
+        C 242 305, 234 322, 246 340
+        C 258 358, 285 354, 290 336
+        C 295 318, 272 310, 263 324
+        C 254 338, 258 360, 276 368
+      " />
+
+      <!-- Brillo destello -->
+      <circle cx="178" cy="136" r="4" class="brillo-luz" />
+      <circle cx="188" cy="125" r="2" class="brillo-luz" />
+      <circle cx="334" cy="136" r="3" class="brillo-luz" />
+    </g>
+  </g>
+
+  <!-- CAPA 3: TEXTOS Y MARCA (TIPOGRAFÍAS LORA & NUNITO) -->
+  <g id="capa-textos">
+    <!-- Líneas divisorias ornamentales sutiles -->
+    <line x1="120" y1="440" x2="210" y2="440" class="adorno-linea" />
+    <circle cx="300" cy="440" r="4" fill="#C86D63" />
+    <line x1="390" y1="440" x2="480" y2="440" class="adorno-linea" />
+
+    <!-- Nombre de la marca: Lora Bold -->
+    <text x="300" y="495" class="texto-marca">Manos de Luz</text>
+
+    <!-- Descriptor artesanal: Nunito Bold -->
+    <text x="300" y="534" class="texto-descriptor">TEJIDOS ARTESANALES</text>
+
+    <!-- Slogan emotivo: Lora Italic -->
+    <text x="300" y="572" class="texto-slogan">«Amor y sacrificio tejidos en cada punto»</text>
+  </g>
+</svg>
