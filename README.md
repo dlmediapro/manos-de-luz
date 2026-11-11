@@ -3,7 +3,9 @@
 > **Cliente:** Manos de Luz  
 > **Fundación:** 30 de Septiembre de 1985  
 > **Slogan:** *«Amor y sacrificio tejidos en cada punto.»*  
-> **Enlace de Presentación en Vivo (GitHub Pages):** [https://dlmediapro.github.io/manos-de-luz/](https://dlmediapro.github.io/manos-de-luz/)
+> **Enlace de Presentación en Vivo (GitHub Pages):** [https://dlmediapro.github.io/manos-de-luz/](https://dlmediapro.github.io/manos-de-luz/)  
+> **Manual de Marca Interactivo 16:9:** [https://dlmediapro.github.io/manos-de-luz/manual.html](https://dlmediapro.github.io/manos-de-luz/manual.html)  
+> **Descarga de Manual en PDF (7 Páginas):** [`Manual_Identidad_Visual_Manos_de_Luz.pdf`](Manual_Identidad_Visual_Manos_de_Luz.pdf)
 
 ---
 

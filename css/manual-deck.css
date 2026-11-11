@@ -1,0 +1,223 @@
+/**
+ * manual-deck.css
+ * Maquetación 16:9 horizontal, transiciones a 60fps y reglas de exportación PDF.
+ * Cliente: Tejidos Manos de Luz (SoC: Capa de Maquetación y Visor)
+ */
+
+/* Contenedor Principal del Visor 16:9 */
+.deck-viewport-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  background: radial-gradient(circle at center, #3A2C21 0%, #1E150F 100%);
+}
+
+.deck-container {
+  width: min(95vw, calc(90vh * 16 / 9));
+  aspect-ratio: 16 / 9;
+  background-color: var(--c-crema);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(232, 221, 208, 0.2);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+/* Diapositivas Semánticas */
+.slide {
+  position: absolute;
+  inset: 0;
+  padding: 44px 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: scale(0.985);
+  transition: opacity 0.28s cubic-bezier(0.16, 1, 0.3, 1), transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  background-color: var(--c-crema);
+}
+
+.slide.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: scale(1);
+  z-index: 2;
+}
+
+/* Encabezado y Pie de Diapositiva */
+.slide-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.slide-content {
+  flex: 1;
+  display: grid;
+  gap: 24px;
+  align-items: center;
+}
+
+.slide-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+  color: #7D6B5E;
+  border-top: 1px solid var(--c-avena);
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+/* Grillas Internas Específicas */
+.grid-2col {
+  grid-template-columns: 1.1fr 0.9fr;
+}
+
+.grid-2col-even {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4col {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-5col {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* Barra de Navegación Flotante */
+.deck-navigation-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(95vw, calc(90vh * 16 / 9));
+  margin-top: 14px;
+  padding: 10px 20px;
+  background: rgba(45, 33, 23, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 40px;
+  border: 1px solid rgba(232, 221, 208, 0.15);
+  color: var(--c-crema);
+}
+
+.nav-cluster {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-btn {
+  background: rgba(247, 244, 238, 0.12);
+  border: none;
+  color: var(--c-crema);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.nav-btn:hover {
+  background: var(--c-terracota);
+  transform: scale(1.08);
+}
+
+.slide-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.dot-indicator {
+  width: 24px;
+  height: 6px;
+  border-radius: 4px;
+  background: rgba(247, 244, 238, 0.25);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.dot-indicator.active {
+  background: var(--c-terracota);
+  width: 36px;
+}
+
+.slide-counter {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 0.88rem;
+  letter-spacing: 1px;
+}
+
+/* Reglas de Exportación Limpia a PDF (@media print) */
+@media print {
+  @page {
+    size: landscape;
+    margin: 0;
+  }
+
+  body {
+    background: #FFFFFF !important;
+    color: #4A3525 !important;
+  }
+
+  .deck-navigation-bar {
+    display: none !important;
+  }
+
+  .deck-viewport-wrapper {
+    padding: 0 !important;
+    background: none !important;
+    min-height: auto !important;
+    height: auto !important;
+    overflow: visible !important;
+    display: block !important;
+  }
+
+  .deck-container {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: auto !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    display: block !important;
+    position: static !important;
+    overflow: visible !important;
+  }
+
+  .slide {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: 100vh !important;
+    min-height: 100vh !important;
+    max-height: 100vh !important;
+    box-sizing: border-box !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    transform: none !important;
+    page-break-after: always !important;
+    break-after: page !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    display: flex !important;
+    padding: 44px 56px !important;
+  }
+}

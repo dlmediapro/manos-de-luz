@@ -1,0 +1,137 @@
+/**
+ * manual-theme.css
+ * Tokens oficiales de diseño, paleta "Abrazo Artesanal" y tipografía corporativa.
+ * Cliente: Tejidos Manos de Luz (SoC: Capa de Presentación Estética)
+ */
+
+:root {
+  /* Paleta Oficial extraída de AdobeColor A,IGURUMIS2.ase */
+  --c-crema: #F7F4EE;       /* 60% Base / Fondo principal */
+  --c-avena: #E8DDD0;       /* 25% Soporte / Tarjetas */
+  --c-cacao: #4A3525;       /* 25% Soporte / Textos y contornos */
+  --c-oliva: #8C9A7E;       /* 10% Equilibrio / Manos y sellos */
+  --c-terracota: #C86D63;   /* 5% Acción / Corazón amigurumi */
+
+  /* Tipografías Oficiales */
+  --font-serif: 'Lora', Georgia, serif;
+  --font-sans: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Geometría y Sombras */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --shadow-subtle: 0 4px 16px rgba(74, 53, 37, 0.06);
+  --shadow-card: 0 8px 24px rgba(74, 53, 37, 0.09);
+  --shadow-hover: 0 12px 32px rgba(74, 53, 37, 0.15);
+}
+
+/* Reset básico para el visor de diapositivas */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2D2117;
+  color: var(--c-cacao);
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Estilos Tipográficos Semánticos */
+.font-brand {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 600;
+}
+
+.font-editorial {
+  font-family: var(--font-serif);
+}
+
+.text-cacao { color: var(--c-cacao); }
+.text-terracota { color: var(--c-terracota); }
+.text-oliva { color: var(--c-oliva); }
+.text-crema { color: var(--c-crema); }
+
+/* Badges y Etiquetas de Sección */
+.slide-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(140, 154, 126, 0.18);
+  color: var(--c-oliva);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.slide-badge.badge-terracota {
+  background: rgba(200, 109, 99, 0.15);
+  color: var(--c-terracota);
+}
+
+.slide-title {
+  font-family: var(--font-serif);
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--c-cacao);
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.slide-title.italic {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.slide-subtitle {
+  font-size: 0.95rem;
+  color: #6C5B4F;
+  margin-bottom: 20px;
+}
+
+/* Tarjetas y Contenedores */
+.card-sheet {
+  background: #FFFFFF;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--c-avena);
+  padding: 20px;
+  box-shadow: var(--shadow-subtle);
+}
+
+.card-sheet-avena {
+  background: var(--c-avena);
+  border-radius: var(--radius-md);
+  padding: 20px;
+}
+
+/* Botones de acción */
+.btn-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--c-terracota);
+  color: var(--c-crema);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(200, 109, 99, 0.35);
+}
