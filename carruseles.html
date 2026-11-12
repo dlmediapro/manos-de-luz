@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campaña de Carruseles — Tejidos Manos de Luz</title>
+  <link rel="icon" type="image/svg+xml" href="vectores/favicon.svg">
+  <meta name="theme-color" content="#F7F4EE">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,600&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/carousel-theme.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO Y NAVEGACIÓN -->
+  <header class="site-header">
+    <a href="index.html" class="brand-nav">
+      <img src="vectores/favicon.svg" alt="Logo Manos de Luz" width="38" height="38">
+      <span>Manos de Luz</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-link">🎨 Sistema Vectorial</a>
+      <a href="manual.html" class="nav-link">📖 Manual 16:9</a>
+      <a href="carruseles.html" class="nav-link active">🧶 Campaña Carruseles</a>
+    </nav>
+  </header>
+
+  <main class="main-wrap">
+    <!-- HERO DE CAMPAÑA -->
+    <section class="hero-section">
+      <span class="hero-tag">Estrategia Redes Sociales 2026</span>
+      <h1 class="hero-title">Campaña de 5 Carruseles (15 Piezas)</h1>
+      <p class="hero-desc">
+        Visualizador interactivo de publicaciones para Instagram diseñado para conectar emocionalmente,
+        construir comunidad y generar ventas directas de amigurumis artesanales.
+      </p>
+    </section>
+
+    <!-- SELECTOR DE CARRUSELES -->
+    <nav id="campaign-tabs" class="campaign-tabs" aria-label="Selector de carruseles"></nav>
+
+    <!-- GRID DE VISUALIZACIÓN -->
+    <div class="workspace-grid">
+      <!-- VISUALIZADOR DE SLIDES -->
+      <section class="carousel-viewer-box" role="region" aria-roledescription="carousel" aria-label="Carrusel interactivo">
+        <div class="ratio-bar">
+          <span class="ratio-title">Proporción CLS=0</span>
+          <div class="ratio-options">
+            <button id="btn-ratio-1-1" class="ratio-btn active" onclick="setAspectRatio('1/1')">1:1 Cuadrado</button>
+            <button id="btn-ratio-4-5" class="ratio-btn" onclick="setAspectRatio('4/5')">4:5 Retrato</button>
+          </div>
+        </div>
+
+        <!-- TARJETA DEL SLIDE -->
+        <article id="slide-frame" class="slide-frame aspect-1-1">
+          <div>
+            <div class="slide-header">
+              <span id="slide-badge" class="slide-badge">Badge</span>
+              <span id="slide-count" class="slide-count">1 / 3</span>
+            </div>
+            <h2 id="slide-heading" class="slide-heading">Título del Slide</h2>
+            <div id="slide-sub" class="slide-sub">Subtítulo descriptivo</div>
+          </div>
+
+          <div class="slide-visual">
+            <img id="slide-img" src="vectores/isologo-principal.svg" alt="Ilustración slide" width="220" height="220">
+          </div>
+
+          <div class="slide-foot">
+            <p id="slide-desc" class="slide-desc">Descripción del contenido visual y emotivo.</p>
+            <a id="slide-btn" href="#" target="_blank" rel="noopener noreferrer" class="slide-btn">Botón de Acción</a>
+          </div>
+        </article>
+
+        <!-- CONTROLES -->
+        <div class="controls-bar">
+          <button id="btn-prev" class="nav-arrow-btn" aria-label="Diapositiva anterior">←</button>
+          <div class="nav-dots" role="tablist" aria-label="Diapositivas">
+            <button class="dot-indicator active" role="tab" aria-selected="true" aria-label="Slide 1"></button>
+            <button class="dot-indicator" role="tab" aria-selected="false" aria-label="Slide 2"></button>
+            <button class="dot-indicator" role="tab" aria-selected="false" aria-label="Slide 3"></button>
+          </div>
+          <button id="btn-next" class="nav-arrow-btn" aria-label="Siguiente diapositiva">→</button>
+        </div>
+      </section>
+
+      <!-- PANEL LATERAL DE INFORMACIÓN Y COPIES -->
+      <aside class="info-panel">
+        <h2 id="info-title" class="info-title">Carrusel 1</h2>
+        <span id="info-obj" class="info-obj">Objetivo</span>
+        
+        <h3 style="font-size: 0.85rem; font-weight: 800; text-transform: uppercase; color: var(--color-cacao); margin-bottom: 6px;">
+          📝 Copy Oficial para Instagram (Caption):
+        </h3>
+        <p id="copy-text" class="copy-box"></p>
+
+        <h3 style="font-size: 0.85rem; font-weight: 800; text-transform: uppercase; color: var(--color-cacao); margin-bottom: 6px;">
+          🏷️ Hashtags de Posicionamiento:
+        </h3>
+        <p id="hashtag-text" class="hashtag-list"></p>
+
+        <h3 style="font-size: 0.85rem; font-weight: 800; text-transform: uppercase; color: var(--color-oliva); margin-bottom: 6px;">
+          ✨ Dirección de Arte (nano-banana-restaurador):
+        </h3>
+        <p id="restoration-text" class="restoration-note"></p>
+      </aside>
+    </div>
+  </main>
+
+  <script src="js/carousel-controller.js"></script>
+</body>
+</html>
