@@ -68,3 +68,4 @@
   2. *Slide 2 (Kit Completo):* Fotografía del packaging artesanal: caja kraft con sello monocromático `#4A3525`, certificado de adopción y lazo de yute.
   3. *Slide 3 (Urgencia & CTA):* Botón de compra Terracota Rosado `#C86D63` con texto en Crema Algodón `#F7F4EE`: *«¡Solo 5 unidades disponibles! Toca el enlace de WhatsApp en la bio»*.
 - **Directriz de Restauración (`nano-banana-restaurador`):** Máxima fidelidad a los 5 colores del manual (.ase), texturas nítidas en alta densidad (Retina 2x).
+
