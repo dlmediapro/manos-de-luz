@@ -1,0 +1,90 @@
+{
+  "brand": {
+    "name": "Manos de Luz",
+    "legalName": "Tejidos Manos de Luz",
+    "slogan": "Amor y sacrificio tejidos en cada punto.",
+    "founded": "1985-09-30",
+    "category": "Muñecas y figuras amigurumi artesanales tejidas a mano",
+    "voiceTone": "Cálido, maternal, íntimo, paciente, afectuoso y artesanal"
+  },
+  "palette": {
+    "name": "Abrazo Artesanal",
+    "source": "AdobeColor A,IGURUMIS2.ase",
+    "colors": {
+      "cremaAlgodon": {
+        "hex": "#F7F4EE",
+        "rgb": "247, 244, 238",
+        "cmyk": "2, 2, 5, 0",
+        "proportion": "60%",
+        "role": "Lienzo principal, fondos cálidos y descanso visual"
+      },
+      "avenaTibia": {
+        "hex": "#E8DDD0",
+        "rgb": "232, 221, 208",
+        "cmyk": "8, 12, 16, 0",
+        "proportion": "25%",
+        "role": "Soporte de tarjetas, cajas de producto y textura táctil"
+      },
+      "cacaoProfundo": {
+        "hex": "#4A3525",
+        "rgb": "74, 53, 37",
+        "cmyk": "48, 62, 74, 55",
+        "proportion": "25%",
+        "role": "Textos principales, menús y contornos de máxima legibilidad"
+      },
+      "verdeOliva": {
+        "hex": "#8C9A7E",
+        "rgb": "140, 154, 126",
+        "cmyk": "43, 24, 47, 4",
+        "proportion": "10%",
+        "role": "Manos acogedoras, insignias de confianza y detalles botánicos"
+      },
+      "terracotaRosado": {
+        "hex": "#C86D63",
+        "rgb": "200, 109, 99",
+        "cmyk": "18, 67, 56, 3",
+        "proportion": "5%",
+        "role": "Corazón amigurumi, botones de compra ('Adoptar muñeca') y acentos"
+      }
+    },
+    "wcagRatios": {
+      "cacaoOnCrema": "10.47:1 (AAA)",
+      "cacaoOnAvena": "8.58:1 (AAA)",
+      "terracotaOnCrema": "3.28:1 (AA Gráfico / Texto Bold >= 14pt)"
+    }
+  },
+  "typography": {
+    "primarySerif": {
+      "family": "Lora, Georgia, serif",
+      "style": "italic",
+      "weight": 600,
+      "usage": "Logomarca 'Manos de Luz', títulos de colección y frases emotivas"
+    },
+    "secondarySans": {
+      "family": "Nunito, -apple-system, BlinkMacSystemFont, sans-serif",
+      "weights": [400, 600, 700],
+      "usage": "Cuerpo de texto, historias de muñecas, etiquetas y botones"
+    }
+  },
+  "mediaStandards": {
+    "carouselRatios": {
+      "square": "1:1 (1080x1080px)",
+      "portrait": "4:5 (1080x1350px)",
+      "deck": "16:9 (1920x1080px)"
+    },
+    "restorationGuidelines": {
+      "skill": "nano-banana-restaurador",
+      "lighting": "Luz natural diurna difusa (3200K - 4500K), sin sombras duras",
+      "textureDefinition": "Puntadas en V de crochet amigurumi ultra nítidas",
+      "colorFidelity": "Respeto riguroso de los tonos #F7F4EE, #E8DDD0, #4A3525, #8C9A7E, #C86D63",
+      "artifactControl": "Cero ruido digital, balance de blancos orgánico y enfoque limpio"
+    }
+  },
+  "contact": {
+    "instagram": "@tejidos.manosdeluz",
+    "instagramUrl": "https://instagram.com/tejidos.manosdeluz",
+    "whatsapp": "+51 936 372 861",
+    "whatsappUrl": "https://wa.me/51936372861",
+    "email": "tejidosmanosdeluz@gmail.com"
+  }
+}
